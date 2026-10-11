@@ -18,6 +18,7 @@ network:
     - github.blog
     - github.com
     - awesome-copilot.github.com
+    - ab.chatgpt.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
