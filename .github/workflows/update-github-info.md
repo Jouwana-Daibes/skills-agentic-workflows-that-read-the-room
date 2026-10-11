@@ -14,6 +14,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     draft: false
@@ -24,10 +25,13 @@ safe-outputs:
 
 # Update GitHub Info
 
-Read `notes/mona-notes.md` and the current `site/content/github-info.md`. Fetch both sources:
+Read `notes/mona-notes.md` and the current `site/content/github-info.md`. Fetch these sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
+
+Use web fetch to retrieve https://awesome-copilot.github.com/workflows/.
 
 Select recent, relevant developments that help developers learn GitHub faster. Verify details against the fetched sources, keep summaries short and practical, and include a link to the originating source for every update. Edit only `site/content/github-info.md`, preserving its existing editorial direction and concise format.
 
