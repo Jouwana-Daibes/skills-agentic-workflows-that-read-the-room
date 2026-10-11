@@ -1,7 +1,9 @@
 ---
 name: update-github-info
 description: Review recent GitHub Blog and Changelog updates and propose practical updates to GitHub Info for Mona.
-engine: copilot
+engine:
+  id: codex
+  model: gpt-5-mini
 on:
   schedule:
     - cron: "0 9 * * *"
