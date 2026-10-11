@@ -1,8 +1,7 @@
 ---
 name: update-github-info
 engine:
-  id: codex
-  model: gpt-5-mini
+  id: copilot
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
 on:
   schedule: daily
