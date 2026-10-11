@@ -1,15 +1,15 @@
 ---
 name: update-github-info
-description: Review recent GitHub Blog and Changelog updates and propose practical updates to GitHub Info for Mona.
 engine:
-  id: copilot
-  model: gpt-5
+  id: codex
+  model: gpt-5-mini
+description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
 on:
-  schedule:
-    - cron: "0 9 * * *"
+  schedule: daily
   workflow_dispatch:
 permissions:
   contents: read
+  pull-requests: read
 tools:
   edit:
   web-fetch:
@@ -20,10 +20,9 @@ network:
     - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
-    draft: false
-    max: 1
-    allowed-files:
-      - site/content/github-info.md
+    title-prefix: "[mona] "
+    draft: true
+    fallback-as-issue: false
 ---
 
 # Update GitHub Info
